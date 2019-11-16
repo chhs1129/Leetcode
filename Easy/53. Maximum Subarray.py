@@ -1,4 +1,6 @@
 def maxSubArray(self, nums: List[int]) -> int:
+        #This is a DP algorithm
+        #dp stores max(current,last_dp_value + current)
         if not nums:
             return 0
         dp=[0]*len(nums)
